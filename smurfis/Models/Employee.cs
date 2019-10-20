@@ -29,5 +29,7 @@ namespace smurfis.Models
         public string email { get; set; }
         [MaxLength(50)]
         public string ePassword { get; set; }
+        [MaxLength(16), Column(TypeName = "Binary")]
+        public byte[] Salt { get; set; }
     }
 }

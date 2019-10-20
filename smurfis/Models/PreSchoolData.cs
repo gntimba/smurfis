@@ -12,12 +12,12 @@ namespace smurfis.Models
         public PreSchoolData() : base("smurfies")
         {
         }
-        public DbSet<Employee> employees;
-        public DbSet<Child> children;
-        public DbSet<Parent> parents;
-        public DbSet<PreSchool> preSchools;
-        public DbSet<Teacher> teachers;
-        public DbSet<Secretary> secretaries;
+        public DbSet<Employee> employees { get; set; }
+        public DbSet<Child> children { get; set; }
+        public DbSet<Parent> parents { get; set; }
+        public DbSet<PreSchool> preSchools { get; set; }
+        public DbSet<Teacher> teachers { get; set; }
+        public DbSet<Secretary> secretaries { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
