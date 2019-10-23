@@ -25,7 +25,7 @@ namespace smurfis.Models
         public string eJobTitle { get; set; }
         [MaxLength(50)]
         public string ePhoneNumber { get; set; }
-        [MaxLength(50)]
+        [MaxLength(50),Index("eMailIndex", IsUnique = true)]
         public string email { get; set; }
         [MaxLength(50)]
         public string ePassword { get; set; }
